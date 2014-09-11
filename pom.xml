@@ -6,7 +6,7 @@
 
     <groupId>org.msh</groupId>
     <artifactId>metagen</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,6 +38,7 @@
 
         <plugins>
             <!-- Generates a unique build number for the build -->
+<!--
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
@@ -55,6 +56,7 @@
                     <doUpdate>false</doUpdate>
                 </configuration>
             </plugin>
+-->
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -81,12 +83,10 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.msh.etbm.desktop.app.MainWindow</mainClass>
+                            <mainClass>org.msh.metagen.Main</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
-                            <SplashScreen-Image>resources/images/logo.png</SplashScreen-Image>
-                            <Implementation-Build>${buildNumber}</Implementation-Build>
                             <Implementation-Version>${project.version}</Implementation-Version>
                             <artifact-id>${project.artifactId}</artifact-id>
                             <group-id>${project.groupId}</group-id>
