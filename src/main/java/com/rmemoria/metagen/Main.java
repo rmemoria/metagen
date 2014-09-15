@@ -1,10 +1,12 @@
-package org.msh.metagen;
+package com.rmemoria.metagen;
 
 /**
+ * Entry point of the application
  * Created by ricardo on 11/09/14.
  */
 public class Main {
    public static void main(String[] args) {
+       System.out.println("metagen v0.1");
        try {
            for (String jarfile: args) {
                System.out.println("Generating meta information for " + jarfile);

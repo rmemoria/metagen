@@ -1,11 +1,10 @@
-package org.msh.metagen;
+package com.rmemoria.metagen;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -22,7 +21,8 @@ import java.util.jar.JarInputStream;
 import java.util.jar.Manifest;
 
 /**
- * Created by ricardo on 11/09/14.
+ * Generates meta-information about a jar file
+ * Created by Ricardo Memoria on 11/09/14.
  */
 public class MetaGenerator {
 

@@ -16,12 +16,12 @@
         <developer>
             <id>rmemoria</id>
             <name>Ricardo Memória</name>
-            <email>rmemoria@msh.org</email>
+            <email>rmemoria@gmail.com</email>
             <roles>
                 <role>Architect</role>
                 <role>Developer</role>
             </roles>
-            <organization>MSH</organization>
+            <organization>RMEMORIA Solutions</organization>
             <timezone>-3</timezone>
         </developer>
     </developers>
@@ -83,7 +83,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.msh.metagen.Main</mainClass>
+                            <mainClass>com.rmemoria.metagen.Main</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
@@ -140,4 +140,13 @@
         </plugins>
 
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
